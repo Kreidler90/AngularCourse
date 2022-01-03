@@ -1,16 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
-import { RecipeModel } from './recipes/recipes.module';
-import { ShoppingListModel } from './shopping-list/shopping-list.model';
 import { SharedModule } from './shared/shared.module';
-import { CoreModul } from './core.modul';
-import { AuthModul } from './auth/auth.Model';
+import { CoreModule } from './core.modul';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent],
@@ -19,11 +16,8 @@ import { AuthModul } from './auth/auth.Model';
     ReactiveFormsModule,
     HttpClientModule,
     AppRoutingModule,
-    RecipeModel,
-    ShoppingListModel,
     SharedModule,
-    CoreModul,
-    AuthModul,
+    CoreModule,
   ],
   bootstrap: [AppComponent],
 })
